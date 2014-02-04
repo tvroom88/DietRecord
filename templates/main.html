@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diet's main homepage</title>
+    <link type="text/css" rel="stylesheet"  href="style.css"/>
+</head>
+<body>
+<script type="text/javascript">
+
+var d = new Date();
+
+document.write( d.getFullYear()+'년'+(d.getMonth() +'월'+ 1)+d.getDate()+'일' + d.getHours() +'시' + d.getMinutes() + '분'+ d.getSeconds() + '초' );
+
+</script>
+     <h1>API List</h1>
+     <h2>헬스 정보 저장하기</h2>
+     <form action="/test/" method="post">
+         <input type="text" name="test">
+         <input type="submit" name="send">
+     </form>
+    <h2>다이어트 정보 보내기</h2>
+     <form action="/dietSave/" method="post">
+
+         <label>currentTime:</label>
+         <input type="text" name="date" value="2010.09.30"></br>
+         <label>pushUp:</label>
+         <input type="text" name="pustUp" ></br>
+         <label>sitUp</label>
+         <input type="text" name="sitUp"></br>
+         <input type="submit" name="send">
+     </form>
+</body>
+</html>
